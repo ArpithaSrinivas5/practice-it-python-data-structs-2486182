@@ -4,11 +4,11 @@ from collections import Counter
 
 def count_words(paragraph):
     paragraph = paragraph.lower()
-    paragraph = paragraph.translate(str.maketrans(" ", " ", string.punctuation))
+    paragraph = paragraph.translate(
+        str.maketrans(" ", " ", string.punctuation))
     wordList = paragraph.split()
     counter = Counter(wordList)
     return counter
-    return
 
 
 def main():
